@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextInputView">
+        <attr name="title" format="string" />
+        <attr name="error" format="string" />
+        <attr name="android:autofillHints" />
+        <attr name="android:contentDescription" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:maxLines" />
+        <attr name="android:drawableEnd" />
+        <attr name="android:text" />
+        <attr name="android:hint" />
+        <attr name="android:digits" />
+        <attr name="restrictSpecialCharacters" format="boolean" />
+    </declare-styleable>
+</resources>

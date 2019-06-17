@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DemoVMTests</string>
+    <string name="profile_title_label">Title</string>
+    <string name="profile_first_name_label">First name</string>
+    <string name="profile_surname_label">Surname</string>
+    <string name="user_profile_country_code_label">Country code</string>
+    <string name="user_profile_phone_number_label">Phone Number</string>
+    <string name="user_profile_date_of_birth_label">Date of Birth</string>
+    <string name="update_user_profile_save_changes_button">Save Changes</string>
 </resources>

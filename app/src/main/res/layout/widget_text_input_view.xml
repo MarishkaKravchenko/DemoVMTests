@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_container"
+        style="@style/TextInputLayout.CustomUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:theme="@style/TextInputLayout.CustomUnderline"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:errorTextAppearance="@style/AppTheme.ErrorTextAppearance"
+        app:helperTextEnabled="true"
+        app:hintTextAppearance="@style/AppTheme.HintTextAppearance"
+        tools:hint="Input Field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_layout_input"
+            style="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            tools:ignore="Autofill,TextFields"
+            tools:text="Test data" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>
