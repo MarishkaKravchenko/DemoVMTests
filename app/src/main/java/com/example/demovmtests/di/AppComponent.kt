@@ -4,12 +4,15 @@ import android.app.Application
 import com.example.demovmtests.base.DemoApplication
 import dagger.BindsInstance
 import dagger.Component
+import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(
     modules = [
-        AppModule::class
+        AndroidInjectionModule::class,
+        AppModule::class,
+        BaseDomainModule::class
     ]
 )
 interface AppComponent {
