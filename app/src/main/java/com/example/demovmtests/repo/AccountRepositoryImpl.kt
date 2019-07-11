@@ -1,7 +1,7 @@
 package com.example.demovmtests.repo
 
 import android.util.Log
-import com.cohaesus.mafshare.data.common.extensions.isConnectionException
+import com.example.demovmtests.extensions.isConnectionException
 import com.example.demovmtests.model.GetSpllitedPhoneNumberResult
 import com.example.demovmtests.model.Phone
 import com.example.demovmtests.model.UpdateUserProfileResult
@@ -13,9 +13,8 @@ class AccountRepositoryImpl
 @Inject constructor() : AccountRepository {
 
     override suspend fun splitPhoneNumber(phoneNumber: String): GetSpllitedPhoneNumberResult {
-        return GetSpllitedPhoneNumberResult.Success(Phone("+38", "555555555"))
+        return GetSpllitedPhoneNumberResult.Success(Phone("380", "555555555"))
     }
-
 
     override suspend fun getUserProfileData(): UserProfileResult {
         val userProfileResult: UserProfileResult
@@ -24,12 +23,12 @@ class AccountRepositoryImpl
             val userProfile =
                 UserProfile(
                     "",
-                    "title",
-                    "firstName",
-                    "surname",
-                    "countryCode",
+                    "Mr",
+                    "John",
+                    "Doe",
+                    "",
                     "555555555",
-                    ""
+                    "1970-05-16"
                 )
             userProfileResult = UserProfileResult.Success(userProfile)
         } catch (throwable: Throwable) {
@@ -43,7 +42,6 @@ class AccountRepositoryImpl
 
         return userProfileResult
     }
-
 
     override suspend fun updateUserProfileData(
         userProfile: UserProfile

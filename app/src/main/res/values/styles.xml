@@ -79,4 +79,19 @@
         <item name="android:textCursorDrawable">@drawable/text_input_cursor</item>
     </style>
 
+    <style name="AppTheme.Profile.Title.RadioButton" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">@dimen/spacing_all_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_all_medium</item>
+        <item name="android:paddingLeft">@dimen/spacing_all_medium</item>
+    </style>
+
+    <style name="AppTheme.Button.OutlinedButton">
+        <item name="strokeColor">@color/white</item>
+        <item name="cornerRadius">@dimen/spacing_all_small</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="strokeWidth">@dimen/button_stroke_width</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
 </resources>

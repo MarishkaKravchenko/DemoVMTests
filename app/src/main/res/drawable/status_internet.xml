@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/background_status" />
+
+    <item
+        android:bottom="@dimen/spacing_all_medium"
+        android:drawable="@drawable/icon_status_internet"
+        android:end="@dimen/spacing_all_medium"
+        android:start="@dimen/spacing_all_medium"
+        android:top="@dimen/spacing_all_medium" />
+
+</layer-list>

@@ -8,7 +8,6 @@ import com.example.demovmtests.model.UserProfileResult
 interface AccountRepository {
     suspend fun getUserProfileData(): UserProfileResult
     suspend fun splitPhoneNumber(phoneNumber: String): GetSpllitedPhoneNumberResult
-
     suspend fun updateUserProfileData(
         userProfile: UserProfile
     ): UpdateUserProfileResult

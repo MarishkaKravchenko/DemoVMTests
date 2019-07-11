@@ -19,20 +19,6 @@ abstract class DateFormatter {
         return simpleDateFormat.format(calendar.time)
     }
 
-    fun getFormattedDate(calendar: Calendar): String = simpleDateFormat.format(calendar.time)
-
-    fun getFormattedDate(date: Date): String {
-        calendar.time = date
-        val year = calendar.get(Calendar.YEAR)
-        val month = calendar.get(Calendar.MONTH) + 1
-        val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
-
-        return getFormattedDate(year, month, dayOfMonth)
-    }
-
-    fun getFormattedDate(date: Long): String =
-        simpleDateFormat.format(Date(date))
-
     fun getDate(date: String): Date? = try {
         simpleDateFormat.parse(date)
     } catch (exception: ParseException) {

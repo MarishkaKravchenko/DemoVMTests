@@ -21,4 +21,10 @@
     <dimen name="text_size_paragraph">14sp</dimen>
     <dimen name="text_size_caption">12sp</dimen>
     <dimen name="text_size_label">10sp</dimen>
+
+    <dimen name="status_view_image_size">150dp</dimen>
+
+    <dimen name="button_stroke_width">1dp</dimen>
+    <dimen name="button_text_size">13sp</dimen>
+    <dimen name="button_height">40dp</dimen>
 </resources>

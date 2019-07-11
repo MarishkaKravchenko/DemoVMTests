@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/background_dialog_transfer"
+    tools:orientation="vertical"
+    tools:parentTag="LinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_all_medium"
+            android:layout_marginEnd="@dimen/spacing_all_medium"
+            android:fontFamily="@font/marselis_pro_light"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_heading"
+            tools:text="Transfer complete" />
+
+        <ImageView
+            android:id="@+id/status_image"
+            android:layout_width="@dimen/status_view_image_size"
+            android:layout_height="@dimen/status_view_image_size"
+            android:layout_marginTop="@dimen/spacing_all_large"
+            android:layout_marginBottom="@dimen/spacing_all_large"
+            tools:src="@drawable/icon_success" />
+
+        <TextView
+            android:id="@+id/status_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_all_large_small"
+            android:layout_marginEnd="@dimen/spacing_all_large_small"
+            android:fontFamily="@font/din_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/text_size_subtext_s3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_subtext_s3"
+            tools:text="You just transferred 200 points to your account. Dont forget some mock string." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/status_primary_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_all_medium"
+            android:layout_marginEnd="@dimen/spacing_all_medium"
+            android:layout_marginBottom="@dimen/spacing_all_small"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/maroon"
+            tools:text="Allow" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/status_secondary_button"
+            style="@style/AppTheme.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_all_medium"
+            android:layout_marginEnd="@dimen/spacing_all_medium"
+            android:layout_marginBottom="@dimen/spacing_all_medium"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            tools:text="Not allow"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</merge>

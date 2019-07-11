@@ -3,4 +3,5 @@
     <color name="primary">@color/maroon</color>
     <color name="primaryDark">@color/maroon_dark</color>
     <color name="accent">@color/maroon</color>
+    <color name="red_dark_gradient">#4b0d17</color>
 </resources>

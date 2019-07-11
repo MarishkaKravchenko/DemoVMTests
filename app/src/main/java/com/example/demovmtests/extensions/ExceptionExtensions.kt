@@ -1,4 +1,4 @@
-package com.cohaesus.mafshare.data.common.extensions
+package com.example.demovmtests.extensions
 
 import java.net.ConnectException
 import java.net.NoRouteToHostException
